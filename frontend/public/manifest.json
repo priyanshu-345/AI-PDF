@@ -1,0 +1,25 @@
+{
+  "name": "AI PDF Studio - Enterprise Document Toolkit",
+  "short_name": "AI PDF",
+  "description": "Enterprise client-side PDF manipulation & AI document conversion toolkit",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FAF9F9",
+  "theme_color": "#800020",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "productivity",
+    "utilities",
+    "business"
+  ]
+}
+

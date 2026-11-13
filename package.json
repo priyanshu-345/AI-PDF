@@ -1,0 +1,31 @@
+{
+  "name": "ai-pdf-toolkit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enterprise AI-Powered PDF Toolkit Web Studio & Backend",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @ai-pdf/frontend dev",
+    "dev:backend": "pnpm --filter @ai-pdf/api dev",
+    "build": "pnpm --filter @ai-pdf/frontend build",
+    "clean": "rm -rf node_modules",
+    "docker:up": "docker compose -f docker/docker-compose.yml up -d",
+    "docker:down": "docker compose -f docker/docker-compose.yml down",
+    "db:push": "pnpm --filter @ai-pdf/database db:push",
+    "db:generate": "pnpm --filter @ai-pdf/database db:generate",
+    "db:seed": "pnpm --filter @ai-pdf/database db:seed"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0",
+    "prettier": "^3.2.5"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
